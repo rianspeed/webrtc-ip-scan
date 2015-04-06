@@ -1,0 +1,23 @@
+<html>
+    <style>
+        ul li {
+            display: inline-block;
+        }
+    </style>
+    <body>
+        <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+        <h4>Your local IP addresses:</h4>
+        <ul id="private_ip"></ul>
+        <h4>Your public IP addresses:</h4>
+        <ul id="public_ip"></ul>
+        <script type="text/javascript" src="ipscan.js"></script>
+
+        <div>
+            <h4>Live IP addresses:</h4>
+            <ul id="live_private_ip"></ul>
+            <h4>Dead IP addresses:</h4>
+            <ul id="dead_private_ip"></ul>
+            <button onclick="end_scan()" >end scan</button>
+        </div>
+    </body>
+</html>
